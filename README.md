@@ -4,7 +4,7 @@ Presentation of a very simple React project showing a pizzeria site. User can or
 Project is in Polish - this also applies to the comments.
 </hr>
 
-### Screenshots folder is redundant.
+#### Screenshots folder is unnecessary for the project to run.
 
 ## Screenshots showcasing the project
 
