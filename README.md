@@ -1,7 +1,7 @@
 # React-Pizzeria
 Presentation of a very simple React project showing a pizzeria site. User can order various sizes of pizzas and add additional ingredients.
 </hr>
-Project is in Polish - this also applies to the comments.
+### Project is in Polish - this also applies to the comments.
 </hr>
 
 #### Screenshots folder is unnecessary for the project to run.
