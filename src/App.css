@@ -1,0 +1,115 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  padding: 2vh;
+  max-height: 50vmin;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  z-index: 1;
+}
+.Logo-span {
+  position: absolute;
+  opacity: 0;
+  left: 53vw;
+  top: 11vh;
+  transition: 0.6s ease-in-out;
+  z-index: 0;
+}
+Button {
+  background-color: rgb(196, 15, 15);
+  color: white;
+  border: none;
+  padding: 0.5em 1em 0.5em 1em;
+  width: fit-content;
+  font-size: medium;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+Button::before{
+  content: '';
+  
+  padding-left: 10vw;
+}
+Button:hover {
+  background-color: rgb(107, 0, 0);
+}
+.Button-1 {
+  position: relative;
+  left: -6vw;
+  text-align: right;
+  float: left;
+  opacity: 50;
+  transition: 0.3 ease-in-out;
+  border-radius: 0 2em  2em 0;
+}
+
+.App-header:hover .Logo-span{
+   opacity: 100;
+   left: 56vw;
+}
+.App-header:hover .Logo-span .Button-1{
+   opacity: 100;
+}
+@media only screen and (max-width: 1000px) {
+  .Button-1 {
+    left: 0;
+    width: fit-content;
+    border-radius: 2em;
+    transition: 0.6 ease-in-out;
+  }
+
+  .Logo-span{
+    left: 60vw;
+  }
+  .App-header:hover .Logo-span{
+    left: 62vw;
+ }
+}
+@media only screen and (max-width: 450px) {
+  .Logo-span{
+    left: 60vw;
+  }
+  .App-header:hover .Logo-span{
+    left: 65vw;
+ }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  position: relative;
+  background-color: #ffffff;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: first baseline;
+  font-size: calc(10px + 2vmin);
+  color: rgb(196, 15, 15);
+}
+
+@keyframes App-logo-spin {
+  0% {
+    transform: rotateZ(0deg) scale3d(1, 0.8, 1);
+  }
+  25% {
+    transform: rotateZ(10deg) scale3d(1.2, 1.3, 1.2);
+  }
+  50% {
+    transform: scale3d(1, 0.8, 1)
+  }
+  75% {
+    transform: rotateZ(-10deg) scale3d(1.2, 1.3, 1.2);
+  }
+  100% {
+    transform: rotateZ(0deg) scale3d(1, 0.8, 1);
+  }
+}

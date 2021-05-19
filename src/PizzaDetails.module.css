@@ -1,0 +1,117 @@
+.container {
+    position: relative;
+    width: 80%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button {
+    top: -7px;
+    color: white;
+    background-color: rgb(196, 15, 15);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 7px rgb(105, 0, 0);
+    cursor: pointer;
+}
+.button_return {
+    position: absolute;
+    left: 60px;
+    top: -25px;
+    color: white;
+    background-color: rgb(196, 15, 15);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 7px rgb(105, 0, 0);
+    cursor: pointer;
+}
+.button_return:hover {
+    top: -22px;
+    background-color: rgb(150, 0, 0);
+    box-shadow: 0px 3px rgb(44, 0, 0);
+}
+.button_return:active {
+    top: 0px;
+    box-shadow: 0px 0px;
+}
+.button:hover {
+    top: -3px;
+    background-color: rgb(150, 0, 0);
+    box-shadow: 0px 3px rgb(44, 0, 0);
+}
+.button:active {
+    top: 0px;
+    box-shadow: 0px 0px;
+}
+.details {
+    position: relative;
+    border: 3px solid rgb(196, 15, 15);
+    border-radius: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    align-items: center;
+}
+.details img {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    max-width: 250px;
+    max-height: 250px;
+}
+.detailsAddons,
+.detailsLeft,
+.detailsRight {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+}
+.detailsAddons {
+    padding: 10px;
+    width: fit-content;
+}
+.detailsRight * {
+    padding: 10px;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+.detailsLeft * {
+    padding: 10px;
+    border-radius: 2em;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+.detailsRight h3 {
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 2em;
+}
+.checkboxstyle {
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 2em;
+    border: none;
+    text-align: left;
+}
+.cart {
+    position: relative;
+    right: 0;
+    text-decoration: none;
+    position: absolute;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
